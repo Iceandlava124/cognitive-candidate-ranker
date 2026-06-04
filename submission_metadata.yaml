@@ -20,7 +20,7 @@ team_members:
 # Code and reproducibility
 # ============================================================================
 github_repo: "https://github.com/Iceandlava124/cognitive-candidate-ranker"
-sandbox_link: "https://huggingface.co/spaces/example/cognitive-candidate-ranker"
+sandbox_link: "https://huggingface.co/spaces/IceandLava124/cognitive-candidate-ranker"
 
 reproduce_command: "python rank_2.py --candidates ./candidates.jsonl --out ./team_test_2.csv"
 
