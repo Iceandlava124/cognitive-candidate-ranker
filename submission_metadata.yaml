@@ -7,13 +7,13 @@
 # ============================================================================
 team_name: "CognitiveRankers"  # Customize this as needed
 primary_contact:
-  name: "Participant Name"
-  email: "participant@example.com"
-  phone: "+91-9999999999"
+  name: "Bhavish Mehta"
+  email: "bhavishmehta371@gmail.com"
+  phone: "+91-6379630733"
 
 team_members:
-  - name: "Participant Name"
-    email: "participant@example.com"
+  - name: "Bhavish Mehta"
+    email: "bhavishmehta371@gmail.com"
     role: "AI Engineer"
 
 # ============================================================================
