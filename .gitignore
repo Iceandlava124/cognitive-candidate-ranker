@@ -1,0 +1,9 @@
+# Ignore large data and output files
+candidates.jsonl
+candidates.jsonl.gz
+dream_candidates_ref_2.json
+sample_candidates.json
+*.csv
+.DS_Store
+__pycache__/
+*.pyc

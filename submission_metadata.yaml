@@ -1,0 +1,65 @@
+# Redrob Hackathon — Submission Metadata
+#
+# Copied and filled based on submission_metadata_template.yaml
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "CognitiveRankers"  # Customize this as needed
+primary_contact:
+  name: "Participant Name"
+  email: "participant@example.com"
+  phone: "+91-9999999999"
+
+team_members:
+  - name: "Participant Name"
+    email: "participant@example.com"
+    role: "AI Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/example/cognitive-candidate-ranker"
+sandbox_link: "https://huggingface.co/spaces/example/cognitive-candidate-ranker"
+
+reproduce_command: "python rank_2.py --candidates ./candidates.jsonl --out ./team_test_2.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Intel Core i7 PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11.5"
+  os: "Windows 11"
+  uses_gpu_for_inference: false                 # Must be false
+  has_network_during_ranking: false             # Must be false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used Gemini for code design, logical honeypot heuristics verification, and building the dynamic sentence generator lexicon. No candidate data was shared with any external network.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Zero-dependency streaming pipeline with multi-stage alignment. Sanitizes logical honeypots (experience vs tenure/age) and enforces a 5-year minimum on product-specific experience (excluding consulting/IT services like TCS, Wipro, Infosys). Relevance is scored via title matching (ML/AI engineering focus), keyword mining in historical descriptions (identifying hidden Tier-5 search engineers), and core skill weights. Scores are scaled by a behavioral multiplier (recency, response rates, and notice periods) and sorted descending, breaking ties using open-to-work flags and GitHub activity. A dynamic, template-free text generator constructs reasoning with specific facts and honest gaps.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
