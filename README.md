@@ -1,3 +1,14 @@
+---
+title: Cognitive Candidate Ranker
+emoji: 🚀
+colorFrom: indigo
+colorTo: blue
+sdk: streamlit
+sdk_version: 1.25.0
+app_file: app.py
+pinned: false
+---
+
 # Cognitive Candidate Discovery & Ranking System (V2)
 
 This repository contains our entry for the Redrob Intelligent Candidate Discovery & Ranking Challenge.
